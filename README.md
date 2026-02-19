@@ -208,7 +208,7 @@ When a student submits an assignment, the system generates:
 }
 ```
 
-## Project Structure
+## Project Structure 
 
 ```
 src/
@@ -228,6 +228,47 @@ src/
 JAVA_BACKEND.md              # Complete Java backend code
 README.md                    # This file
 ```
+
+##  BackEnd Poject Structure
+assignment-backend/
+├── src/main/java/com/assignment/
+│   ├── AssignmentApplication.java
+│   ├── config/
+│   │   ├── SecurityConfig.java
+│   │   └── CorsConfig.java
+│   ├── controller/
+│   │   ├── AuthController.java
+│   │   ├── AssignmentController.java
+│   │   ├── SubmissionController.java
+│   │   └── FeedbackController.java
+│   ├── model/
+│   │   ├── User.java
+│   │   ├── Assignment.java
+│   │   ├── Submission.java
+│   │   └── Feedback.java
+│   ├── repository/
+│   │   ├── UserRepository.java
+│   │   ├── AssignmentRepository.java
+│   │   ├── SubmissionRepository.java
+│   │   └── FeedbackRepository.java
+│   ├── service/
+│   │   ├── AuthService.java
+│   │   ├── AssignmentService.java
+│   │   ├── SubmissionService.java
+│   │   └── AIEvaluationService.java
+│   ├── dto/
+│   │   ├── LoginRequest.java
+│   │   ├── RegisterRequest.java
+│   │   ├── AuthResponse.java
+│   │   ├── CreateAssignmentRequest.java
+│   │   ├── SubmissionRequest.java
+│   │   └── FeedbackResponse.java
+│   └── security/
+│       ├── JwtTokenProvider.java
+│       └── JwtAuthenticationFilter.java
+├── src/main/resources/
+│   └── application.properties
+└── pom.xml
 
 ## Security Features
 
