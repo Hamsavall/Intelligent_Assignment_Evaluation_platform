@@ -232,38 +232,83 @@ README.md                    # This file
 ##  BackEnd Poject Structure
 assignment-backend/
 ├── src/main/java/com/assignment/
-│   ├── AssignmentApplication.java
-│   ├── config/
-│   │   ├── SecurityConfig.java
-│   │   └── CorsConfig.java
-│   ├── controller/
-│   │   ├── AuthController.java
-│   │   ├── AssignmentController.java
-│   │   ├── SubmissionController.java
-│   │   └── FeedbackController.java
-│   ├── model/
-│   │   ├── User.java
-│   │   ├── Assignment.java
-│   │   ├── Submission.java
-│   │   └── Feedback.java
-│   ├── repository/
-│   │   ├── UserRepository.java
-│   │   ├── AssignmentRepository.java
-│   │   ├── SubmissionRepository.java
-│   │   └── FeedbackRepository.java
-│   ├── service/
-│   │   ├── AuthService.java
-│   │   ├── AssignmentService.java
-│   │   ├── SubmissionService.java
-│   │   └── AIEvaluationService.java
-│   ├── dto/
-│   │   ├── LoginRequest.java
-│   │   ├── RegisterRequest.java
-│   │   ├── AuthResponse.java
-│   │   ├── CreateAssignmentRequest.java
-│   │   ├── SubmissionRequest.java
-│   │   └── FeedbackResponse.java
-│   └── security/
+
+│   
+├── AssignmentApplication.java
+│
+├── config/
+│
+│   
+├── SecurityConfig.java
+│
+│   
+└── CorsConfig.java
+│   
+├── controller/
+│   
+│   
+├── AuthController.java
+│   
+│   
+├── AssignmentController.java
+│   
+│   
+├── SubmissionController.java
+│
+│
+└── FeedbackController.java
+│
+├── model/
+│
+│
+├── User.java
+│
+│   ├── Assignment.java
+│
+│   ├── Submission.java
+│
+│   └── Feedback.java
+│
+├── repository/
+│
+│
+├── UserRepository.java
+│
+│
+├── AssignmentRepository.java
+│
+│
+├── SubmissionRepository.java
+│
+│   └── FeedbackRepository.java
+│
+├── service/
+│
+│
+├── AuthService.java
+│
+│
+├── AssignmentService.java
+│
+│   ├── SubmissionService.java
+│
+│   └── AIEvaluationService.java
+│
+├── dto/
+│
+│   ├── LoginRequest.java
+│
+│   ├── RegisterRequest.java
+│
+│   ├── AuthResponse.java
+│
+│   ├── CreateAssignmentRequest.java
+│
+│   ├── SubmissionRequest.java
+│
+│   └── FeedbackResponse.java
+│
+└── security/
 │       ├── JwtTokenProvider.java
 │       └── JwtAuthenticationFilter.java
 ├── src/main/resources/
